@@ -1,0 +1,16 @@
+@mixin generate-texts($xs, $sm, $md, $lg) {
+		.text-xs { font-size: $xs !important; }
+		.text-sm { font-size: $sm !important; }
+		.text-md { font-size: $md !important; }
+		.text-lg { font-size: $lg !important; }
+}
+
+@mixin generate-text($size) {
+		.text-#{$size} { font-size: #{$size}px !important; }
+}
+
+.text-bold { font-weight: bold !important; }
+
+.text-underline { text-decoration: underline !important; }
+
+.text-strikethrough { text-decoration: line-through !important; }
